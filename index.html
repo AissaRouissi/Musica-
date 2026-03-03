@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock de los 80 — Era Dorada</title>
+  <meta name="description" content="Rock de los años 80: historia, subgéneros, artistas y la cultura que cambió la música para siempre." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== CUSTOM CURSOR ========== -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <!-- ========== SCROLL PROGRESS BAR ========== -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ========== GRAIN OVERLAY ========== -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar" role="banner">
+    <nav class="nav-container" aria-label="Navegación principal">
+      <a href="#hero" class="nav-logo magnetic" aria-label="Inicio">
+        <span class="logo-text">ROCK</span><span class="logo-accent">80</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#hero" class="nav-link magnetic">Inicio</a></li>
+        <li><a href="#caracteristicas" class="nav-link magnetic">Características</a></li>
+        <li><a href="#subgeneros" class="nav-link magnetic">Subgéneros</a></li>
+        <li><a href="#artistas" class="nav-link magnetic">Artistas</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero" aria-label="Sección principal">
+      <!-- Decorative grid lines -->
+      <div class="grid-lines" aria-hidden="true">
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+      </div>
+
+      <!-- Big decorative number -->
+      <div class="hero-bg-number" aria-hidden="true">80</div>
+
+      <!-- Animated gradient orbs -->
+      <div class="orb orb-1" aria-hidden="true"></div>
+      <div class="orb orb-2" aria-hidden="true"></div>
+      <div class="orb orb-3" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <!-- Kinetic title split into individual characters -->
+        <div class="hero-eyebrow reveal-text">Era Dorada</div>
+
+        <h1 class="hero-title" id="heroTitle" aria-label="Rock de los 80">
+          <span class="hero-word" aria-hidden="true">
+            <span class="char">R</span><span class="char">O</span><span class="char">C</span><span class="char">K</span>
+          </span>
+          <span class="hero-word hero-word-accent" aria-hidden="true">
+            <span class="char">D</span><span class="char">E</span>
+          </span>
+          <span class="hero-word" aria-hidden="true">
+            <span class="char">L</span><span class="char">O</span><span class="char">S</span>
+          </span>
+          <span class="hero-word hero-word-neon" aria-hidden="true">
+            <span class="char">8</span><span class="char">0</span>
+          </span>
+        </h1>
+
+        <p class="hero-subtitle">
+          El rock de los años 80 fue una época muy importante para la música.<br />
+          Este estilo se desarrolló principalmente en <em>Estados Unidos</em> y <em>Reino Unido</em>.<br />
+          Y tiene una estética exagerada y teatral.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#caracteristicas" class="btn btn-primary magnetic" aria-label="Explorar el rock de los 80">
+            <span class="btn-text">Explorar</span>
+            <span class="btn-arrow" aria-hidden="true">↓</span>
+          </a>
+          <a href="#artistas" class="btn btn-outline magnetic" aria-label="Ver artistas">
+            <span class="btn-text">Artistas</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-dot"></div>
+        <span class="scroll-label">scroll</span>
+      </div>
+    </section>
+
+    <!-- ========== CARACTERÍSTICAS SECTION ========== -->
+    <section class="caracteristicas section" id="caracteristicas" aria-labelledby="caracteristicas-title">
+      <div class="section-container">
+        <div class="section-header reveal-up">
+          <span class="section-number" aria-hidden="true">01</span>
+          <h2 class="section-title" id="caracteristicas-title">Características</h2>
+          <p class="section-subtitle">Los factores que definieron una era</p>
+        </div>
+
+        <div class="features-grid">
+
+          <article class="feature-item reveal-left" aria-labelledby="feat-1-title">
+            <div class="feature-number" aria-hidden="true">01</div>
+            <div class="feature-icon" aria-hidden="true">🎹</div>
+            <h3 class="feature-title" id="feat-1-title">Nuevas Tecnologías</h3>
+            <p class="feature-desc">Uso de nuevas tecnologías como sintetizadores que revolucionaron el sonido del rock y abrieron puertas a nuevas texturas musicales.</p>
+            <div class="feature-line" aria-hidden="true"></div>
+          </article>
+
+          <article class="feature-item reveal-up" aria-labelledby="feat-2-title">
+            <div class="feature-number" aria-hidden="true">02</div>
+            <div class="feature-icon" aria-hidden="true">📺</div>
+            <h3 class="feature-title" id="feat-2-title">MTV en 1981</h3>
+            <p class="feature-desc">Aparición de MTV en 1981, que hizo populares los videos musicales y transformó la música en un espectáculo visual imprescindible.</p>
+            <div class="feature-line" aria-hidden="true"></div>
+          </article>
+
+          <article class="feature-item reveal-right" aria-labelledby="feat-3-title">
+            <div class="feature-number" aria-hidden="true">03</div>
+            <div class="feature-icon" aria-hidden="true">✊</div>
+            <h3 class="feature-title" id="feat-3-title">Cultura Juvenil</h3>
+            <p class="feature-desc">Influencia de la cultura juvenil y la rebeldía que convirtió al rock en el himno de toda una generación que buscaba su identidad.</p>
+            <div class="feature-line" aria-hidden="true"></div>
+          </article>
+
+          <article class="feature-item reveal-up" aria-labelledby="feat-4-title">
+            <div class="feature-number" aria-hidden="true">04</div>
+            <div class="feature-icon" aria-hidden="true">🎸</div>
+            <h3 class="feature-title" id="feat-4-title">Grandes Conciertos</h3>
+            <p class="feature-desc">Grandes conciertos y bandas famosas en todo el mundo que llenaban estadios y dejaban actuaciones legendarias e irrepetibles.</p>
+            <div class="feature-line" aria-hidden="true"></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SUBGÉNEROS SECTION ========== -->
+    <section class="subgeneros section" id="subgeneros" aria-labelledby="subgeneros-title">
+      <div class="section-container">
+        <div class="section-header reveal-up">
+          <span class="section-number" aria-hidden="true">02</span>
+          <h2 class="section-title" id="subgeneros-title">Subgéneros</h2>
+          <p class="section-subtitle">Las ramas del árbol del rock</p>
+        </div>
+
+        <div class="genres-grid">
+
+          <article class="genre-card reveal-scale glass-card magnetic" aria-labelledby="genre-1-title">
+            <div class="genre-bg-text" aria-hidden="true">HARD</div>
+            <div class="genre-icon" aria-hidden="true">🔥</div>
+            <h3 class="genre-title" id="genre-1-title">Hard Rock</h3>
+            <p class="genre-desc">Sonido pesado, riffs agresivos y voces poderosas. El hard rock definió la energía bruta de los 80 con bandas como AC/DC y Van Halen.</p>
+            <div class="genre-tag">Agresivo · Poderoso</div>
+          </article>
+
+          <article class="genre-card reveal-scale glass-card magnetic" aria-labelledby="genre-2-title">
+            <div class="genre-bg-text" aria-hidden="true">GLAM</div>
+            <div class="genre-icon" aria-hidden="true">💎</div>
+            <h3 class="genre-title" id="genre-2-title">Glam Rock</h3>
+            <p class="genre-desc">Estética teatral y extravagante: maquillaje, ropa brillante y cabello exagerado. El glam rock fue el espectáculo total del rock.</p>
+            <div class="genre-tag">Teatral · Extravagante</div>
+          </article>
+
+          <article class="genre-card reveal-scale glass-card magnetic" aria-labelledby="genre-3-title">
+            <div class="genre-bg-text" aria-hidden="true">POP</div>
+            <div class="genre-icon" aria-hidden="true">🌟</div>
+            <h3 class="genre-title" id="genre-3-title">Pop Rock</h3>
+            <p class="genre-desc">Melodías pegadizas con energía rockera. El pop rock conquistó las listas de éxitos y llegó a millones de hogares en todo el mundo.</p>
+            <div class="genre-tag">Melódico · Comercial</div>
+          </article>
+
+          <article class="genre-card reveal-scale glass-card magnetic" aria-labelledby="genre-4-title">
+            <div class="genre-bg-text" aria-hidden="true">METAL</div>
+            <div class="genre-icon" aria-hidden="true">⚡</div>
+            <h3 class="genre-title" id="genre-4-title">Heavy Metal</h3>
+            <p class="genre-desc">La variante más intensa del rock: guitarras distorsionadas, batería poderosa y letras épicas. Metallica y Iron Maiden fueron sus reyes.</p>
+            <div class="genre-tag">Intenso · Épico</div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ARTISTAS SECTION ========== -->
+    <section class="artistas section" id="artistas" aria-labelledby="artistas-title">
+      <div class="section-container">
+        <div class="section-header reveal-up">
+          <span class="section-number" aria-hidden="true">03</span>
+          <h2 class="section-title" id="artistas-title">Artistas</h2>
+          <p class="section-subtitle">Las leyendas que forjaron la era</p>
+        </div>
+
+        <div class="artists-grid">
+
+          <!-- Queen -->
+          <article class="artist-card reveal-left" aria-labelledby="artist-queen-title">
+            <div class="artist-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80"
+                alt="Concierto de rock con guitarra eléctrica representando a Queen"
+                class="artist-image"
+                loading="lazy"
+                width="800"
+                height="600"
+              />
+              <div class="artist-image-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="artist-info">
+              <div class="artist-meta">
+                <span class="artist-year">1970</span>
+                <span class="artist-origin">Reino Unido</span>
+              </div>
+              <h3 class="artist-name" id="artist-queen-title">Queen</h3>
+              <p class="artist-desc">
+                Banda británica formada en 1970. Su cantante era el icónico <strong>Freddie Mercury</strong>.
+                Mezclaban géneros de rock (hard rock, art rock…) con otros estilos (R&amp;B, soul…).
+              </p>
+              <div class="artist-songs">
+                <span class="songs-label">Canciones famosas:</span>
+                <ul class="songs-list" role="list">
+                  <li class="song-item">We Will Rock You</li>
+                  <li class="song-item">Another One Bites the Dust</li>
+                </ul>
+              </div>
+              <div class="artist-tags" aria-label="Géneros musicales">
+                <span class="artist-tag">Hard Rock</span>
+                <span class="artist-tag">Art Rock</span>
+                <span class="artist-tag">R&amp;B</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bon Jovi -->
+          <article class="artist-card reveal-right" aria-labelledby="artist-bonjovi-title">
+            <div class="artist-image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=800&q=80"
+                alt="Escenario de concierto de rock representando a Bon Jovi"
+                class="artist-image"
+                loading="lazy"
+                width="800"
+                height="600"
+              />
+              <div class="artist-image-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="artist-info">
+              <div class="artist-meta">
+                <span class="artist-year">1983</span>
+                <span class="artist-origin">Estados Unidos</span>
+              </div>
+              <h3 class="artist-name" id="artist-bonjovi-title">Bon Jovi</h3>
+              <p class="artist-desc">
+                Banda estadounidense formada en 1983. Su cantante era <strong>Jon Bon Jovi</strong>.
+                Estilo rock y glam metal que enamoró a millones con anthems de estadio.
+              </p>
+              <div class="artist-songs">
+                <span class="songs-label">Canciones famosas:</span>
+                <ul class="songs-list" role="list">
+                  <li class="song-item">Livin' on a Prayer</li>
+                  <li class="song-item">It's My Life</li>
+                </ul>
+              </div>
+              <div class="artist-tags" aria-label="Géneros musicales">
+                <span class="artist-tag">Rock</span>
+                <span class="artist-tag">Glam Metal</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">ROCK<span class="logo-accent">80</span></span>
+          <p class="footer-tagline">El rock de los 80 vive para siempre.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Navegación del footer">
+          <a href="#hero" class="footer-link">Inicio</a>
+          <a href="#caracteristicas" class="footer-link">Características</a>
+          <a href="#subgeneros" class="footer-link">Subgéneros</a>
+          <a href="#artistas" class="footer-link">Artistas</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-credits">
+          Diseñado con estética retro-futurista ✨ · Rock de los 80
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
