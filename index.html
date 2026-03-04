@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎸 Rock de los 80 — Awwwards Experience</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;700;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-text">
+      <span>R</span><span>O</span><span>C</span><span>K</span>
+      <span>&nbsp;</span>
+      <span>8</span><span>0</span><span>s</span>
+    </div>
+    <div class="preloader-bar">
+      <div class="preloader-bar-fill" id="preloaderFill"></div>
+    </div>
+  </div>
+
+  <!-- Floating Particles -->
+  <canvas id="particlesCanvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="neon-text" data-text="ROCK 80s">ROCK 80s</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link magnetic-btn">Inicio</a></li>
+      <li><a href="#context" class="nav-link magnetic-btn">Contexto</a></li>
+      <li><a href="#subgenres" class="nav-link magnetic-btn">Subgéneros</a></li>
+      <li><a href="#artists" class="nav-link magnetic-btn">Artistas</a></li>
+      <li><a href="#timeline" class="nav-link magnetic-btn">Timeline</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-subtitle reveal-text" data-delay="0">★ THE GOLDEN ERA ★</div>
+      <h1 class="hero-title glitch" data-text="ROCK DE LOS 80">
+        <span class="hero-title-line reveal-text" data-delay="200">ROCK</span>
+        <span class="hero-title-line reveal-text accent" data-delay="400">DE LOS</span>
+        <span class="hero-title-line reveal-text" data-delay="600">80</span>
+      </h1>
+      <p class="hero-desc reveal-text" data-delay="800">La era dorada de la música que cambió el mundo para siempre</p>
+      <a href="#context" class="hero-cta magnetic-btn reveal-text" data-delay="1000">
+        <span>Explorar</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="mouse">
+        <div class="mouse-wheel"></div>
+      </div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- Context Section -->
+  <section class="section context" id="context">
+    <div class="section-header">
+      <span class="section-number scroll-reveal">01</span>
+      <h2 class="section-title scroll-reveal">
+        <span class="neon-text" data-text="EL CONTEXTO">EL CONTEXTO</span>
+      </h2>
+      <div class="section-line scroll-reveal"></div>
+    </div>
+    <div class="context-grid">
+      <div class="context-card glass-card scroll-reveal" data-tilt>
+        <div class="card-icon">🎹</div>
+        <h3>Sintetizadores</h3>
+        <p>Los sintetizadores revolucionaron el sonido del rock, creando paisajes sonoros nunca antes escuchados que definieron toda una generación.</p>
+        <div class="card-glow"></div>
+      </div>
+      <div class="context-card glass-card scroll-reveal" data-tilt>
+        <div class="card-icon">📺</div>
+        <h3>MTV</h3>
+        <p>El nacimiento de MTV transformó la música en un espectáculo visual. Los videoclips se convirtieron en arte cinematográfico puro.</p>
+        <div class="card-glow"></div>
+      </div>
+      <div class="context-card glass-card scroll-reveal" data-tilt>
+        <div class="card-icon">🤘</div>
+        <h3>Cultura Juvenil</h3>
+        <p>Una generación rebelde que vivía al máximo. La moda extravagante, el pelo cardado y la actitud desafiante definieron la época.</p>
+        <div class="card-glow"></div>
+      </div>
+      <div class="context-card glass-card scroll-reveal" data-tilt>
+        <div class="card-icon">🎤</div>
+        <h3>Grandes Conciertos</h3>
+        <p>Estadios llenos hasta arriba, pirotecnia épica y shows legendarios como el Live Aid que unió al mundo entero.</p>
+        <div class="card-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee Section -->
+  <div class="marquee-section">
+    <div class="marquee">
+      <div class="marquee-content">
+        <span>★ ROCK & ROLL ★</span>
+        <span>★ HEAVY METAL ★</span>
+        <span>★ GLAM ROCK ★</span>
+        <span>★ POP ROCK ★</span>
+        <span>★ HARD ROCK ★</span>
+        <span>★ ROCK & ROLL ★</span>
+        <span>★ HEAVY METAL ★</span>
+        <span>★ GLAM ROCK ★</span>
+        <span>★ POP ROCK ★</span>
+        <span>★ HARD ROCK ★</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subgenres Section -->
+  <section class="section subgenres" id="subgenres">
+    <div class="section-header">
+      <span class="section-number scroll-reveal">02</span>
+      <h2 class="section-title scroll-reveal">
+        <span class="neon-text" data-text="SUBGÉNEROS">SUBGÉNEROS</span>
+      </h2>
+      <div class="section-line scroll-reveal"></div>
+    </div>
+    <div class="subgenres-container">
+      <div class="subgenre-item scroll-reveal" data-genre="hard-rock">
+        <div class="subgenre-number">01</div>
+        <div class="subgenre-content">
+          <h3 class="subgenre-title">Hard Rock</h3>
+          <p>Guitarras distorsionadas, riffs potentes y actitud rebelde. AC/DC, Guns N' Roses y Led Zeppelin definieron el sonido más puro y crudo del rock.</p>
+        </div>
+        <div class="subgenre-visual">
+          <div class="equalizer">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="subgenre-item scroll-reveal" data-genre="glam-rock">
+        <div class="subgenre-number">02</div>
+        <div class="subgenre-content">
+          <h3 class="subgenre-title">Glam Rock</h3>
+          <p>Purpurina, maquillaje y teatralidad extrema. David Bowie, Kiss y Mötley Crüe llevaron el rock a un espectáculo visual sin precedentes.</p>
+        </div>
+        <div class="subgenre-visual">
+          <div class="equalizer">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="subgenre-item scroll-reveal" data-genre="pop-rock">
+        <div class="subgenre-number">03</div>
+        <div class="subgenre-content">
+          <h3 class="subgenre-title">Pop Rock</h3>
+          <p>La fusión perfecta entre melodías pegadizas y energía rock. Bon Jovi, Def Leppard y Journey conquistaron las radios del mundo.</p>
+        </div>
+        <div class="subgenre-visual">
+          <div class="equalizer">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="subgenre-item scroll-reveal" data-genre="heavy-metal">
+        <div class="subgenre-number">04</div>
+        <div class="subgenre-content">
+          <h3 class="subgenre-title">Heavy Metal</h3>
+          <p>Velocidad, potencia y virtuosismo. Iron Maiden, Judas Priest y Metallica crearon el sonido más extremo y técnico de la era.</p>
+        </div>
+        <div class="subgenre-visual">
+          <div class="equalizer">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artists Section -->
+  <section class="section artists" id="artists">
+    <div class="section-header">
+      <span class="section-number scroll-reveal">03</span>
+      <h2 class="section-title scroll-reveal">
+        <span class="neon-text" data-text="ARTISTAS LEGENDARIOS">ARTISTAS LEGENDARIOS</span>
+      </h2>
+      <div class="section-line scroll-reveal"></div>
+    </div>
+    <div class="artists-showcase">
+      <div class="artist-card scroll-reveal" data-tilt>
+        <div class="artist-card-inner">
+          <div class="artist-card-bg"></div>
+          <div class="artist-info">
+            <div class="artist-icon">👑</div>
+            <h3 class="artist-name glitch" data-text="QUEEN">QUEEN</h3>
+            <p class="artist-desc">Freddie Mercury y su banda revolucionaron el rock con himnos como "Bohemian Rhapsody" y "We Will Rock You". Su actuación en Live Aid 1985 es considerada la mejor de la historia.</p>
+            <div class="artist-stats">
+              <div class="stat">
+                <span class="stat-number" data-count="300">0</span>
+                <span class="stat-label">Millones de discos</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-count="700">0</span>
+                <span class="stat-label">Conciertos</span>
+              </div>
+            </div>
+          </div>
+          <div class="artist-vinyl">
+            <div class="vinyl-disc">
+              <div class="vinyl-label">QUEEN</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="artist-card scroll-reveal" data-tilt>
+        <div class="artist-card-inner">
+          <div class="artist-card-bg"></div>
+          <div class="artist-info">
+            <div class="artist-icon">🎸</div>
+            <h3 class="artist-name glitch" data-text="BON JOVI">BON JOVI</h3>
+            <p class="artist-desc">Con "Livin' on a Prayer" y "You Give Love a Bad Name", Jon Bon Jovi definió el sonido del arena rock de los 80 y llenó estadios en todo el planeta.</p>
+            <div class="artist-stats">
+              <div class="stat">
+                <span class="stat-number" data-count="130">0</span>
+                <span class="stat-label">Millones de discos</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number" data-count="2700">0</span>
+                <span class="stat-label">Conciertos</span>
+              </div>
+            </div>
+          </div>
+          <div class="artist-vinyl">
+            <div class="vinyl-disc">
+              <div class="vinyl-label">BON JOVI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="section timeline" id="timeline">
+    <div class="section-header">
+      <span class="section-number scroll-reveal">04</span>
+      <h2 class="section-title scroll-reveal">
+        <span class="neon-text" data-text="TIMELINE">TIMELINE</span>
+      </h2>
+      <div class="section-line scroll-reveal"></div>
+    </div>
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+      <div class="timeline-item scroll-reveal" data-year="1980">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-year">1980</span>
+          <h3>El Inicio</h3>
+          <p>AC/DC lanza "Back in Black", el segundo álbum más vendido de la historia. John Lennon es asesinado, marcando el fin de una era.</p>
+        </div>
+      </div>
+      <div class="timeline-item scroll-reveal" data-year="1981">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-year">1981</span>
+          <h3>Nace MTV</h3>
+          <p>MTV revoluciona la industria musical con el primer videoclip: "Video Killed the Radio Star". La música ya nunca será igual.</p>
+        </div>
+      </div>
+      <div class="timeline-item scroll-reveal" data-year="1984">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-year">1984</span>
+          <h3>La Explosión</h3>
+          <p>Van Halen domina con "Jump". Bon Jovi debuta. El glam metal alcanza su punto álgido en el Sunset Strip de Los Ángeles.</p>
+        </div>
+      </div>
+      <div class="timeline-item scroll-reveal" data-year="1985">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-year">1985</span>
+          <h3>Live Aid</h3>
+          <p>El concierto benéfico más grande de la historia. Queen roba el show con una actuación de 20 minutos que pasó a la eternidad.</p>
+        </div>
+      </div>
+      <div class="timeline-item scroll-reveal" data-year="1987">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-year">1987</span>
+          <h3>Appetite for Destruction</h3>
+          <p>Guns N' Roses irrumpe con el álbum debut más vendido de la historia. "Sweet Child O' Mine" se convierte en himno generacional.</p>
+        </div>
+      </div>
+      <div class="timeline-item scroll-reveal" data-year="1989">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-year">1989</span>
+          <h3>El Cierre de una Era</h3>
+          <p>El muro de Berlín cae al ritmo del rock. La década termina con el grunge asomando en el horizonte de Seattle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="neon-text" data-text="ROCK 80s">ROCK 80s</span>
+      </div>
+      <p class="footer-text">Diseñado con estética retro-futurista ✨</p>
+      <div class="footer-wave">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M0,60 C200,120 400,0 600,60 C800,120 1000,0 1200,60 L1200,120 L0,120 Z" fill="rgba(255,0,100,0.1)"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
